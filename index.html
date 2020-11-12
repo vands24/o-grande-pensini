@@ -14,24 +14,90 @@
 </head>
 
 
-<body>
+<body class=" bg-dark">
+
+    <!--dança psicadélica-->
+    <div id="victory" class="w-100 h-100 bg-primary position-absolute d-none" style="z-index: 100;">
+        <div class="row w-100 h-100 p-0 m-0">
+            <!--primeira linha-->
+            <div class="col-3 p-0 m-0 block">
+            </div>
+            <div class="col-3 p-0 m-0 block">
+            </div>
+            <div class="col-3 p-0 m-0 block">
+            </div>
+            <div class="col-3 p-0 m-0 block">
+            </div>
+            <!--segunda linha-->
+            <div class="col-3 p-0 m-0 block">
+            </div>
+            <div class="col-3 p-0 m-0 block">
+            </div>
+            <div class="col-3 p-0 m-0 block">
+            </div>
+            <div class="col-3 p-0 m-0 block">
+            </div>
+            <!--terceira linha-->
+            <div class="col-3 p-0 m-0 block">
+            </div>
+            <div class="col-3 p-0 m-0 block">
+            </div>
+            <div class="col-3 p-0 m-0 block">
+            </div>
+            <div class="col-3 p-0 m-0 block">
+            </div>
+            <!--quarta linha-->
+            <div class="col-3 p-0 m-0 block">
+            </div>
+            <div class="col-3 p-0 m-0 block">
+            </div>
+            <div class="col-3 p-0 m-0 block">
+            </div>
+            <div class="col-3 p-0 m-0 block">
+            </div>
+            <!--quinta linha-->
+            <div class="col-3 p-0 m-0 block">
+            </div>
+            <div class="col-3 p-0 m-0 block">
+            </div>
+            <div class="col-3 p-0 m-0 block">
+            </div>
+            <div class="col-3 p-0 m-0 block">
+            </div>
+            <!--sexta linha-->
+            <div class="col-3 p-0 m-0 block">
+            </div>
+            <div class="col-3 p-0 m-0 block">
+            </div>
+            <div class="col-3 p-0 m-0 block">
+            </div>
+            <div class="col-3 p-0 m-0 block">
+            </div>
+        </div>
+    </div>
+
+
     <!--Título-->
     <div class="jumbotron">
+        <img class="img-fluid float-right" width="100" src="imgs/wizard.png">
         <h1 class="display-4">O Grande Pensini</h1>
         <p class="lead">Saudações comum humano. Experimente o meu talento de leitura mental.</p>
         <hr class="my-4">
-        <p>Pense então num número entre <span id="minValue">---</span> e <span id="maxValue">---</span>.</p>
+        <p>Pensa então num número entre <span id="minValue">---</span> e <span id="maxValue">---</span>.</p>
     </div>
+
+   
 
 
     <!--Contentor do conteúdo: main-->
     <main class="container">
 
         <!--divisão para o texto-->
-        <div class="row text-center">
+        <div class="row text-center text-white">
             <div class="col-12">
                 <p>o número em que estás a pensar é</p>
             </div>
+
             <div class="col-12">
                 <h1 id="guess">000</h1>
             </div>
@@ -46,17 +112,17 @@
 
             <!--butão acima-->
             <div class="col-lg-4 ">
-                <button type="button" class="w-100 btn btn-primary" onclick="onButtonHigherPressed()">acima</button>
+                <button type="button" class="w-100 btn btn-secondary" onclick="onButtonHigherPressed()">acima</button>
             </div>
 
             <!--butão abaixo-->
             <div class="col-lg-4 w-100">
-                <button type="button" class="w-100 btn btn-danger" onclick="onButtonLowerPressed()">abaixo</button>
+                <button type="button" class="w-100 btn btn-secondary" onclick="onButtonLowerPressed()">abaixo</button>
             </div>
 
             <!--butão certo-->
             <div class="col-lg-4 w-100">
-                <button type="button" class="w-100 btn btn-success" onclick="onButtonSuccessPressed()">absolutamente
+                <button type="button" class="w-100 btn btn-info" onclick="onButtonSuccessPressed()">absolutamente
                     perfeito</button>
             </div>
         </div>
